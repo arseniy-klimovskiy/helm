@@ -30,7 +30,7 @@ Warning: Downloading a whole HELM project requires a very large amounts of disk 
 
 1. (Optional) Use the `gcloud storage du` ([documentation](https://cloud.google.com/sdk/gcloud/reference/storage/du)) command to compute the size of the download and ensure you have enough space on your local disk:
 ```sh
-gcloud storage du -sh $GCS_BENCHMARK_OUTPUT_PATH
+gcloud storage du -s $GCS_BENCHMARK_OUTPUT_PATH
 ```
 2. Run `gcloud storage rsync` ([documentation](https://cloud.google.com/sdk/gcloud/reference/storage/rsync)) to download the data to the folder created in the previous step:
 ```sh
